@@ -1,2 +1,2 @@
-# TODO.react.js
-Simple TODO list react made in React.js
+# ClickCounter.react.js
+Simple Click Counter made with React.js

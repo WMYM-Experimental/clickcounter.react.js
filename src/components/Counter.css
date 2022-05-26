@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(#000000, #010101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clickCounterContainer {
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 30px;
+    background: #2af9ef;
+    background: -webkit-linear-gradient(top left, #2af9ef, #93b1db);
+    background: -moz-linear-gradient(top left, #2af9ef, #93b1db);
+    background: linear-gradient(to bottom right, #2af9ef, #93b1db);
+}
+.counterTitle {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+.num {
+    background-color: blue;
+    display: flex;
+    height: 40%;
+    justify-content: center;
+}
+.num h6 {
+    font-size: xx-large;
+}
+.counterConsole {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+}
+@media screen and (max-width: 480px) {
+    .clickCounterContainer {
+        width: 300px;
+        height: 300px;
+    }
+}
