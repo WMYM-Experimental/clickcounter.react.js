@@ -1,12 +1,13 @@
 import { useState } from "react";
 
 const Counter = () => {
+    const signs = [`<`, `>`];
     const [num, setNum] = useState(0);
 
-    const handleClickMinus = () => {
+    const handleClickMinus = (n) => {
         return setNum(num - 1);
     };
-    const handleClickPlus = () => {
+    const handleClickPlus = (n) => {
         return setNum(num + 1);
     };
 
@@ -23,10 +24,10 @@ const Counter = () => {
 
                 <div className="counterConsole">
                     <div className="minus">
-                        <button onClick={handleClickMinus}>-</button>
+                        <button onClick={handleClickMinus}>{signs[0]}</button>
                     </div>
                     <div className="plus">
-                        <button onClick={handleClickPlus}>+</button>
+                        <button onClick={handleClickPlus}>{signs[1]}</button>
                     </div>
                 </div>
             </div>
